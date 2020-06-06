@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;  
+  }
+  header {
+    background-color: #BFDFC4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100px;
+  }
+  .menu {
+    padding: 15px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 0.5em;
+  }
+  main {
+    display: flex;
+   flex-basis: 800px;
+  /*   justify-content: center;
+    align-content: stretch; */
+    flex-grow: 2;
+  }
+  
+  article {
+    background-color:#5DBED1;
+    flex-basis: 60%;
+    flex-grow: 1;
+  }
+  .intro {
+    background-color: aqua;
+    height: 20em;
+  }
+  .aboutMe {
+    background-color: pink;
+    height: 30em;
+  }
+ 
+  footer {
+    background-color: #BFDFC4;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column; 
+    flex-basis: 100px;
+  }
+  .connect {
+      padding: 2em;
+  }
+  .projects {
+    background-color: pink;
+    height: 30em;
+  }
+  
+  @media all and (max-width: 640px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    
+    }
+    nav {
+      order: 0;
+    }
+  }
