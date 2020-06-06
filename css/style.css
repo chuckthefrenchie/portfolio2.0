@@ -1,9 +1,10 @@
 body {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    background-color: #f9f8f4; 
   }
   header {
-    background-color: #BFDFC4;
+    background-color: #f9f8f4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,9 +15,17 @@ body {
   }
   a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.5em;
-    padding: 0.5em;
+    /* padding: 0.5em; */
+    padding: 10px 0px 2px;
+    margin: 25px 12px 0px;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+  }
+  .logo {
+    font-family: Arial,sans-serif;
+    font-size: 2em;
   }
   main {
     display: flex;
@@ -27,13 +36,38 @@ body {
   }
   
   article {
-    background-color:#5DBED1;
+    background-color: #f9f8f4;
     flex-basis: 60%;
     flex-grow: 1;
   }
+  #background {
+
+  }
   .intro {
-    background-color: aqua;
+    text-decoration: none;
+    background-color: #f9f8f4;
     height: 20em;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    /* line-height: 2em; */
+    padding: 0.5em;
+    color: #181818;
+    margin-left: 6em;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row; 
+    /* background-color: grey; */
+  }
+
+  .stack {
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+  }
+  p{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 17px;
+    font-family: Arial,sans-serif; /*just for now, look for Akriv Grotesk*/
   }
   .aboutMe {
     background-color: pink;
