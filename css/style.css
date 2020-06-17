@@ -3,19 +3,20 @@ body {
     flex-direction: column; 
     background-color: #f9f8f4; 
   }
+  
   header {
     background-color: #f9f8f4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 80px;
+    /* flex-basis: 10px; */
+    margin-left: 2em;
+    margin-right: 2em;
   }
-  .menu {
-    /* padding: 1px; */
-  }
+
   a {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 0.8em;
     padding: 10px 0px 2px;
     margin: 15px 10px 0px;
@@ -25,10 +26,21 @@ body {
   .logo {
     font-family: Arial,sans-serif;
     font-size: 1em;
+    font-weight: bold;
+    /* margin-top: 0.2em; */
+    letter-spacing: 0.1em;
   }
   h1{
       z-index: 2;
-      margin-top: 2.5em;
+      margin-top: 2em;
+      opacity: 0;
+      animation: hi 1s ease-in 1s 1 normal; 
+      animation-fill-mode: forwards;
+
+  }
+  @keyframes hi {
+    0%   { opacity: 0; }
+    100% {opacity: 1; }
   }
   main {
     display: flex;
@@ -46,52 +58,108 @@ body {
 #background {
     position: absolute;
     display: flex;
-    margin-left: 3.2em;
-    margin-top: 0em;
+    margin-left: 3.7em;
 }
 .lines {
     border-right: solid 1px rgba(0,0,0,0.07);
     width: 1px;
-    height: 20em;
-    margin: 0px 6px 0px 0px;
-    /* animation: example 1.1s ease-in-out 0s 1 normal; */
+    height: 14em;
+    margin: 0px 5px 0px 0px;
     position: inline;
     z-index: 0;
-    
+    animation: linesAni 1.9s ease-in-out 0s 1 normal;  
 }
+
+@keyframes linesAni {
+    from {transform: translateY(9em);}
+    to {transform: translateY(0em);}
+    }
+
   .intro {
     text-decoration: none;
     background-color: #f9f8f4;
-    height: 20em;
+    height: 15em;
     color: rgba(0, 0, 0, 0.9);
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    /* line-height: 2em; */
+    font-size: 45px;
     padding: 0.5em;
     color: #181818;
-    margin-left: 6em;
-    font-weight: lighter;
+    margin-left: 3.5em;
     display: flex;
     flex-direction: row; 
-    /* background-color: grey; */
-    margin-top: 0.5em;
   }
 
   .stack {
-    margin-top: 3.0em;
-    margin-left: 2.0em;
+    margin-top: 4.3em;
+    margin-left: 2.3em;
     z-index: 1;
-    line-height: 0.6em;
-  }
+    line-height: 0.7em;
+    width: 10em;
+    opacity: 0;
+    animation: stackAni 1s ease-in 1.6s 1 normal; 
+    animation-fill-mode: forwards;
+}
+@keyframes stackAni {
+  0%   { opacity: 0; }
+  100% {opacity: 1; }
+}
+  
   p{
     color: rgba(0, 0, 0, 0.9);
     font-size: 17px;
     font-family: Arial,sans-serif; /*just for now, look for Akriv Grotesk*/
-    margin-top: 4.5em;
+    
+}
+
+#aboutLine {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: rgba(0,0,0,0.9);
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: .1em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    opacity: 0;
+    animation: projectsAni 1s ease-in 2.1s 1 normal; 
+    animation-fill-mode: forwards;
+
+}
+@keyframes projectsAni {
+  0%   { opacity: 0; }
+  100% {opacity: 1; }
+}
+
+.line2 {
+    border-right: solid 1px black;
+    display: flex;
+    width: 2px;
+    height: 12.7em;
+    margin-top: 15px;
+    opacity: 0;
+    animation: line2Ani 1s ease-in 2s 1 normal; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes line2Ani {
+    0%   { opacity: 0; }
+    100% {opacity: 1; }
+    from {transform: translateY(0em);}
+    to {transform: translateY(10em);}
+     }
+
+
+h5 {
+    margin-top: 6em;
+    margin-left: 0.1em;
+    
 }
   .aboutMe {
-    background-color: pink;
+    background-color:  #f9f8f4;
     height: 30em;
+    border-top: solid 2px rgba(0,0,0,0.07);
+    margin-left: 2em;
+    margin-right: 2em;
   }
  
   footer {
@@ -119,3 +187,5 @@ body {
       order: 0;
     }
   }
+
+
